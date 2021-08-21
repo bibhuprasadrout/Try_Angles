@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Try Angles</title>
+  <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+  <h1>Try Angles</h1>
+  <section class="app">
+    <form class="three-angles">
+      <label class="angle-one">
+        Enters first angle
+        <input class="angle angle-one-val" type="number">&#8451
+      </label>
+      <label class="angle-two">
+        Enters second angle
+        <input class="angle angle-two-val" type="number">&#8451
+      </label>
+      <label class="angle-three">
+        Enters third angle
+        <input class="angle angle-three-val" type="number">&#8451
+      </label>
+      <input class="calculate" type="button" value="Calculate">
+      <button class="reset">Try Again</button>
+    </form>
+    <div class="try-angles-outcome">
+      <p class="triangle-formed hidden">You have successfully formed a triangle. Now you can procced to challenge the quiz.</p>
+      <p class="triangle-failed hidden"> You have failed to form a triangle. Please form a triangle sucessfully to be able to challenge the quiz.</p>
+    </div>
+    <div class="quiz hidden">
+      <form class="quiz">
+        <label class="calculate-hypotenuse">
+          Calculate the hypotenuse of the above formed triangle when two of its sides are two <em>units </em> long and three <em>units</em> long respectively: <input class="calculate-hypotenuse-val" type="number" placeholder="0.000"><em>units</em>
+        </label>
+        <label class="calculate-area hidden">
+          The height of the above formed triangle is <strong class="triangle-height"></strong><em>units</em> while the
+          hypotenus obtained from the previous question is the base.
+          <br>
+          Calculate the area of the above formed triangle with its hypotenus as the base and it's height being <span class="triangleHeight"></span><em>units</em>: <input class="calculate-area-val" type="number"><em>units</em>
+        </label>
+        <input class="next visible" type="button" value="Next">
+        </label>
+        <input class="calculate-score hidden" type="button" value="Calculate Score">
+        <button class="reset second-reset hidden">Try Again</button>
+      </form>
+    </div>
+    <div class="appriciation"></div>
+  </section>
+  <script src="./js/index.js"></script>
+</body>
+
+</html>
