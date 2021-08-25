@@ -147,7 +147,15 @@ calculate.addEventListener('click', function() {
   }
 })
 
-calculateScore.addEventListener('click', hypotenuseValidator)
+calculateScore.addEventListener('click', function() {
+  if(hypotenuseInput.value && areaInput.value) {
+    hypotenuseValidator()
+  } else {
+    document.querySelector('.appriciation').classList.remove('hidden')
+    document.querySelector('.appriciation').classList.add('visible')
+    document.querySelector('.appriciation').innerText = `Please answer all questions.`
+  }
+})
 next.addEventListener('click', hypotenuseValidatorNext)
 
 document.querySelector('.first-reset').addEventListener('click', function() {
