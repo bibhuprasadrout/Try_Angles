@@ -4,14 +4,194 @@
   margin: 0;
 }
 
-.three-angles {
-  display: flex;
-  flex-flow: column;
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500;700&display=swap');
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 500;
+  color: #000000c7;
 }
 
-.quiz {
+input[type='button'],
+input[type='reset'] {
+  padding: 7px 17px;
+  border: 1px solid rgba(255, 255, 255, 0.17);
+  border-radius: 3px;
+  background: rgba(255, 255, 255, 0.11);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(27px);
+  font-weight: 700;
+  font-size: 11px;
+}
+
+body {
+  background-color: rgb(253 126 73 / 47%);
+  background-image: url('../media/images/martin-sanchez-spvxoWZfPv8-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  padding: 30px;
+}
+
+.app {
+  width: auto;
+  max-width: 370px;
+  height: auto;
+  margin: auto;
+  border: 1px solid rgba(255, 255, 255, 0.17);
+  border-radius: 7px;
+  background: rgba(255, 255, 255, 0.11);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
   display: flex;
   flex-flow: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 3vh;
+}
+
+.app .banner-section {
+  background-color: rgb(253 127 73 / 47%);
+  border: 3px solid rgba(255, 255, 255, 0.17);
+  border-radius: 7px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  padding: 11px 21px;
+  font-size: 21px;
+  box-shadow: 0 8px 32px 0 rgba(31, 135, 83, 0.237);
+  width: 100%;
+}
+
+.app .three-angles {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 11px;
+  padding: 11px 21px;
+}
+
+.app .three-angles input {
+  outline: none;
+  border: 3px solid #ffffff77;
+  background-color: #ffffff77;
+  margin: 3px 3px 0 0;
+  padding: 0 0 0 7px;
+  border-radius: 3px;
+  width: 93%;
+}
+
+.app .three-angles .buttons .calculate {
+  width: auto;
+  padding: 7px 17px;
+  border: 1px solid rgba(255, 255, 255, 0.17);
+  border-radius: 3px;
+  background: rgba(255, 255, 255, 0.37);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(70px);
+  -webkit-backdrop-filter: blur(70px);
+  font-weight: 700;
+  font-size: 11px;
+}
+
+.app .three-angles .buttons .first-reset {
+  width: auto;
+  padding: 7px 17px;
+  border: 1px solid rgba(255, 255, 255, 0.17);
+  border-radius: 3px;
+  background: rgba(255, 255, 255, 0.11);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(27px);
+  font-weight: 700;
+  font-size: 11px;
+}
+
+.app .try-angles-outcome {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 11px;
+  padding: 11px 21px;
+}
+
+.app .quiz .quiz-form {
+  display: hidden;
+  flex-flow: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 11px;
+  padding: 11px 21px;
+}
+
+.app .quiz .quiz-form input {
+  outline: none;
+  border: 3px solid #ffffff77;
+  background-color: #ffffff77;
+  margin: 3px 7px 0 0;
+  padding: 0 0 0 7px;
+  border-radius: 3px;
+  width: 77%;
+}
+
+.app .quiz .quiz-form .buttons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app .quiz .quiz-form .buttons .next {
+  width: auto;
+  padding: 7px 17px;
+  border: 1px solid rgba(255, 255, 255, 0.17);
+  border-radius: 3px;
+  background: rgba(255, 255, 255, 0.37);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(70px);
+  -webkit-backdrop-filter: blur(70px);
+  font-weight: 700;
+  font-size: 11px;
+}
+
+.app .quiz .quiz-form .buttons .calculate-score {
+  width: auto;
+  padding: 7px 17px;
+  border: 1px solid rgba(255, 255, 255, 0.17);
+  border-radius: 3px;
+  background: rgba(255, 255, 255, 0.37);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(70px);
+  -webkit-backdrop-filter: blur(70px);
+  font-weight: 700;
+  font-size: 11px;
+}
+
+.app .quiz .quiz-form .buttons .second-reset {
+  width: auto;
+  padding: 7px 17px;
+  border: 1px solid rgba(255, 255, 255, 0.17);
+  border-radius: 3px;
+  background: rgba(255, 255, 255, 0.37);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(70px);
+  -webkit-backdrop-filter: blur(70px);
+  font-weight: 700;
+  font-size: 11px;
+}
+
+.app .appriciation {
+  text-align: justify;
+  padding: 0 30px;
 }
 
 .hidden {
@@ -20,4 +200,8 @@
 
 .visible {
   display: block;
+}
+
+.flex {
+  display: flex;
 }
